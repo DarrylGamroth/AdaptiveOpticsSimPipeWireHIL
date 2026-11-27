@@ -52,7 +52,7 @@ control execution.
 
 ## Tests
 
-From the package checkout on Linux x86-64, add the registry above and run
+From the package checkout on Linux, add the registry above and run
 `Pkg.instantiate(); Pkg.build("AdaptiveOpticsSimPipeWireHIL"); Pkg.test(coverage=true)`
 with Julia started using `--project --threads=1,1`. The suite runs Aqua and
 exercises synthetic instrument graphs on isolated PipeWire cores.
