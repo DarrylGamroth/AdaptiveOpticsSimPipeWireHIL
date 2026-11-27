@@ -1,4 +1,4 @@
-# Run through the namespace invocation in docs/HEART.md.
+# Run this opt-in test in a private network and shared-memory namespace.
 using Proper
 include("simulation_optical.jl")
 

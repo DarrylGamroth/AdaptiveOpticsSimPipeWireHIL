@@ -1,6 +1,6 @@
 name = "AdaptiveOpticsSimPipeWireHIL"
 uuid = "355e2bce-7765-4934-ac1c-873e1c98ec3d"
-version = "0.5.11"
+version = "0.5.12"
 authors = ["Darryl Gamroth"]
 
 [deps]
