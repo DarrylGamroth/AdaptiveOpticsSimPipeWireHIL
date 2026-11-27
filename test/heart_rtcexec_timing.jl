@@ -1,4 +1,4 @@
-# Opt-in sustained benchmark. Use the private namespace in docs/HEART.md.
+# Run this opt-in timing test in a private network and shared-memory namespace.
 using Proper
 include("simulation_optical.jl")
 

@@ -1,4 +1,4 @@
-# Opt-in loopback UDP interoperability test. See docs/HEART.md.
+# Opt-in loopback UDP interoperability test.
 using Proper
 include("simulation_optical.jl")
 
