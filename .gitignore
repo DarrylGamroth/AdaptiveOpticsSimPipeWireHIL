@@ -1,0 +1,7 @@
+/Manifest.toml
+/.julia/
+*.cov
+*.mem
+/deps/build.log
+/deps/libhil_command_receiver.so
+/lcov.info

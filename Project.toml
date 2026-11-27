@@ -1,0 +1,58 @@
+name = "AdaptiveOpticsSimPipeWireHIL"
+uuid = "355e2bce-7765-4934-ac1c-873e1c98ec3d"
+version = "0.5.11"
+authors = ["Darryl Gamroth"]
+
+[deps]
+AdaptiveOpticsSim = "002fb5eb-ad68-44a0-adbe-b299bfc2febc"
+Agent = "f7939a7f-2bcc-4096-952b-c44031b5533b"
+Clocks = "6b5ade5d-6e95-4584-b343-73eec2e8782b"
+FITSIO = "525bcba6-941b-5504-bd06-fd0dc1a4d2eb"
+PipeWireAO = "5d815c25-fdf3-4508-8205-db8be38ea5d0"
+PipeWireAO_jll = "cde84cf6-9a21-5ce0-b5e3-1526e778c30b"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+
+[weakdeps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+PipeWireAORTC = "a3e2c7da-f73f-4284-8482-36ac422b34e6"
+ThreadPinning = "811555cd-349b-4f26-b7bc-1f208b848042"
+
+[extensions]
+AdaptiveOpticsSimPipeWireHILCUDAExt = "CUDA"
+PipeWireAORTCExt = ["PipeWireAORTC", "ThreadPinning"]
+
+[compat]
+AdaptiveOpticsSim = "0.3.25"
+Agent = "0.4.1"
+Aqua = "0.8"
+Clocks = "0.4"
+CUDA = "6.5.1"
+FITSIO = "0.17"
+JSON = "1"
+PipeWireAO = "0.9.3"
+PipeWireAO_jll = "4.0.3"
+PipeWireAORTC = "0.7.24"
+Profile = "1"
+Proper = "0.4"
+SHA = "0.7, 1"
+Test = "1"
+ThreadPinning = "1"
+TOML = "1"
+UUIDs = "1"
+YAML = "0.4.17"
+julia = "1.13"
+
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+PipeWireAORTC = "a3e2c7da-f73f-4284-8482-36ac422b34e6"
+Profile = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
+Proper = "0686a737-3bdd-44da-9bf7-6692cf630078"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+ThreadPinning = "811555cd-349b-4f26-b7bc-1f208b848042"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[targets]
+test = ["Aqua", "JSON", "PipeWireAORTC", "Profile", "Proper", "Test", "ThreadPinning", "TOML"]
